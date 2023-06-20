@@ -24,7 +24,7 @@
             {#each technologies as technology (technology)}
                 <TechnologyBadge {technology} />
             {/each}
-            {#if !showingMoreTechnologies && project.moreTechnologies}
+            {#if !showingMoreTechnologies && project.moreTechnologies.length}
                 <button class="link" on:click={() => (showingMoreTechnologies = true)}>
                     more...
                 </button>
