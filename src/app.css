@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Use IBM Plex fonts */
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    word-break: break-word;
+}
+
+pre,
+code,
+kbd {
+    font-family: 'IBM Plex Mono', monospace;
+}

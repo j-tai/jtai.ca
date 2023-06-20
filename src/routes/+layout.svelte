@@ -1,5 +1,7 @@
 <script lang="ts">
     import '../app.css';
+    import '@fontsource/ibm-plex-sans';
+    import '@fontsource/ibm-plex-mono';
 </script>
 
 <header>
