@@ -14,3 +14,10 @@ code,
 kbd {
     font-family: 'IBM Plex Mono', monospace;
 }
+
+/* Components */
+
+.text {
+    @apply prose w-full;
+    max-width: initial;
+}

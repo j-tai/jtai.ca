@@ -10,6 +10,6 @@
     </div>
 </header>
 
-<main class="max-w-[48rem] mx-auto my-6">
+<main class="max-w-[42rem] mx-auto my-10 px-4">
     <slot />
 </main>
