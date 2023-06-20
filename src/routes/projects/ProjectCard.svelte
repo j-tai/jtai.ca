@@ -8,10 +8,13 @@
     $: technologies = showingMoreTechnologies
         ? [...project.technologies, ...project.moreTechnologies]
         : project.technologies;
+
+    $: startYear = project.date[0];
+    $: endYear = project.date[1];
 </script>
 
 <div class="card card-compact bg-base-200 my-4">
-    <div class="card-body">
+    <div class="card-body relative">
         <h2 class="card-title">
             {#if project.url}
                 <a href={project.url} class="link">{project.name}</a>
@@ -19,6 +22,13 @@
                 {project.name}
             {/if}
         </h2>
+        <p class="absolute top-4 right-4">
+            {#if startYear === endYear}
+                {startYear}
+            {:else}
+                {startYear} &ndash; {endYear}
+            {/if}
+        </p>
         <p>{project.description}</p>
         <p>
             {#each technologies as technology (technology)}

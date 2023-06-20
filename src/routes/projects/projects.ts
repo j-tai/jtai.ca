@@ -36,20 +36,19 @@ export const PROJECTS: Project[] = [
     },
 
     {
-        name: 'getargs',
-        url: 'https://github.com/j-tai/getargs',
-        description: 'A super fast argument parser for Rust',
-        date: [2019, 2022],
-        technologies: ['Rust'],
-        moreTechnologies: [],
-    },
-
-    {
         name: 'TieFix',
         url: 'https://github.com/j-tai/TieFix',
         description: 'A Minecraft mod that fixes some annoying bugs in the game',
         date: [2020, 2023],
         technologies: ['Java', 'Gradle', 'Groovy'],
+        moreTechnologies: [],
+    },
+
+    {
+        name: 'packager',
+        description: 'Generate Debian and Arch Linux packages from simple scripts in YAML',
+        date: [2022, 2023],
+        technologies: ['Python', 'Shell', 'YAML', 'Git'],
         moreTechnologies: [],
     },
 
@@ -62,10 +61,11 @@ export const PROJECTS: Project[] = [
     },
 
     {
-        name: 'packager',
-        description: 'Generate Debian and Arch Linux packages from simple scripts in YAML',
-        date: [2022, 2023],
-        technologies: ['Python', 'Shell', 'YAML', 'Git'],
+        name: 'getargs',
+        url: 'https://github.com/j-tai/getargs',
+        description: 'A super fast argument parser for Rust',
+        date: [2019, 2022],
+        technologies: ['Rust'],
         moreTechnologies: [],
     },
 
