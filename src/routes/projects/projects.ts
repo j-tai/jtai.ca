@@ -8,7 +8,6 @@ export const PROJECTS: Project[] = [
         date: [2023, 2023],
         technologies: ['SvelteKit', 'TypeScript', 'Tailwind CSS', 'DaisyUI', 'Cloudflare'],
         moreTechnologies: ['Svelte', 'Node.js', 'npm', 'PostCSS', 'CSS', 'HTML', 'JavaScript'],
-        notability: 10,
     },
 
     {
@@ -34,26 +33,15 @@ export const PROJECTS: Project[] = [
             'HTML',
             'JavaScript',
         ],
-        notability: 150,
     },
 
     {
         name: 'getargs',
         url: 'https://github.com/j-tai/getargs',
-        description: 'A truly zero-cost argument parser for Rust',
+        description: 'A super fast argument parser for Rust',
         date: [2019, 2022],
         technologies: ['Rust'],
         moreTechnologies: [],
-        notability: 100,
-    },
-
-    {
-        name: 'packager',
-        description: 'Generate Debian and Arch Linux packages from simple scripts in YAML',
-        date: [2022, 2023],
-        technologies: ['Python', 'Shell', 'YAML', 'Git'],
-        moreTechnologies: [],
-        notability: 12,
     },
 
     {
@@ -63,16 +51,6 @@ export const PROJECTS: Project[] = [
         date: [2020, 2023],
         technologies: ['Java', 'Gradle', 'Groovy'],
         moreTechnologies: [],
-        notability: 80,
-    },
-
-    {
-        name: 'chess',
-        description: 'Chess game with GUI and AI with 4 difficulty levels',
-        date: [2022, 2022],
-        technologies: ['C++', 'Rust', 'Makefile'],
-        moreTechnologies: [],
-        notability: 15,
     },
 
     {
@@ -81,17 +59,22 @@ export const PROJECTS: Project[] = [
         date: [2020, 2022],
         technologies: ['React Native', 'React', 'iOS', 'TypeScript'],
         moreTechnologies: ['Expo', 'JavaScript'],
-        notability: 30,
     },
 
     {
-        name: 'dot.sh',
-        url: 'https://github.com/j-tai/dot.sh',
-        description: 'Dotfiles manager',
-        date: [2018, 2019],
-        technologies: ['Shell'],
+        name: 'packager',
+        description: 'Generate Debian and Arch Linux packages from simple scripts in YAML',
+        date: [2022, 2023],
+        technologies: ['Python', 'Shell', 'YAML', 'Git'],
         moreTechnologies: [],
-        notability: 1,
+    },
+
+    {
+        name: 'chess',
+        description: 'Chess game with GUI and AI with 4 difficulty levels',
+        date: [2022, 2022],
+        technologies: ['C++', 'Rust', 'Makefile'],
+        moreTechnologies: [],
     },
 
     {
@@ -101,7 +84,6 @@ export const PROJECTS: Project[] = [
         date: [2019, 2020],
         technologies: ['C', 'Makefile'],
         moreTechnologies: [],
-        notability: 4,
     },
 
     {
@@ -111,7 +93,6 @@ export const PROJECTS: Project[] = [
         date: [2019, 2020],
         technologies: ['Rust', 'Git'],
         moreTechnologies: [],
-        notability: 2,
     },
 
     {
@@ -121,6 +102,14 @@ export const PROJECTS: Project[] = [
         date: [2020, 2020],
         technologies: ['Rust'],
         moreTechnologies: [],
-        notability: 5,
+    },
+
+    {
+        name: 'dot.sh',
+        url: 'https://github.com/j-tai/dot.sh',
+        description: 'Dotfiles manager',
+        date: [2018, 2019],
+        technologies: ['Shell'],
+        moreTechnologies: [],
     },
 ];

@@ -10,8 +10,6 @@ export interface Project {
     technologies: Technology[];
     /** More technologies used in the project */
     moreTechnologies: Technology[];
-    /** How notable the project is (higher number is more notable) */
-    notability: number;
 }
 
 /**
