@@ -7,6 +7,7 @@
 <header>
     <div class="navbar bg-primary text-primary-content">
         <a href="/" class="btn btn-ghost">Home</a>
+        <a href="/projects" class="btn btn-ghost">Projects</a>
     </div>
 </header>
 
