@@ -78,6 +78,14 @@ export const PROJECTS: Project[] = [
     },
 
     {
+        name: 'Accelerando',
+        description: 'Rhythm game with an emphasis on player-created levels',
+        date: [2020, 2020],
+        technologies: ['Godot', 'GDScript', 'iOS'],
+        moreTechnologies: [],
+    },
+
+    {
         name: 'minesweeper-ce',
         url: 'https://github.com/j-tai/minesweeper-ce',
         description: 'Minesweeper game for TI-84 Plus CE graphing calculators',
