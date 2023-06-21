@@ -21,4 +21,6 @@
     <h1>Contact</h1>
 
     <p>You can contact me by email at <a href="mailto:{email}">{email}</a>.</p>
+
+    <p>You can also visit me on <a href="https://github.com/j-tai/">GitHub</a>.</p>
 </div>
