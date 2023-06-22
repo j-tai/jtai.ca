@@ -49,12 +49,10 @@
 <label class="label w-full" for="search">
     <span class="label-text">Search</span>
 </label>
-<!-- svelte-ignore a11y-autofocus -->
 <input
     id="search"
     type="text"
     placeholder="Enter text, year, or technology name"
-    autofocus
     class="input input-bordered w-full"
     bind:value={search}
 />
