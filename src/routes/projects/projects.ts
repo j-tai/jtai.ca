@@ -3,7 +3,7 @@ import type { Project } from './project';
 export const PROJECTS: Project[] = [
     {
         name: 'jtai.ca',
-        url: 'https://www.jtai.ca/',
+        url: 'https://github.com/j-tai/jtai.ca',
         description: 'Personal website',
         date: [2023, 2023],
         technologies: ['SvelteKit', 'TypeScript', 'Tailwind CSS', 'DaisyUI', 'Cloudflare'],
