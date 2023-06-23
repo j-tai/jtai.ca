@@ -17,7 +17,9 @@ kbd {
 
 /* Components */
 
-.text {
-    @apply prose w-full;
-    max-width: initial;
+@layer components {
+    .text {
+        @apply prose w-full;
+        max-width: initial;
+    }
 }

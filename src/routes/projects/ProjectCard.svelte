@@ -1,4 +1,5 @@
 <script lang="ts">
+    import ExternalLink from '$lib/ExternalLink.svelte';
     import TechnologyBadge from './TechnologyBadge.svelte';
     import type { Project } from './project';
 
@@ -17,7 +18,8 @@
     <div class="card-body relative">
         <h2 class="card-title">
             {#if project.url}
-                <a href={project.url} class="link">{project.name}</a>
+                <a href={project.url} target="_blank" class="link">{project.name}<ExternalLink /></a
+                >
             {:else}
                 {project.name}
             {/if}

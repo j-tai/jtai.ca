@@ -3,6 +3,7 @@
     import '@fontsource/ibm-plex-sans';
     import '@fontsource/ibm-plex-mono';
     import ThemeSwitcher from '$lib/ThemeSwitcher.svelte';
+    import ExternalLink from '$lib/ExternalLink.svelte';
 </script>
 
 <header>
@@ -27,16 +28,16 @@
     <div class="footer p-8">
         <div>
             <span class="footer-title">Links</span>
-            <a href="https://github.com/j-tai">GitHub</a>
+            <a href="https://github.com/j-tai">GitHub<ExternalLink /></a>
         </div>
         <div>
             <span class="footer-title">About</span>
             <a href="/contact">Contact</a>
-            <a href="https://github.com/j-tai/jtai.ca">Source code</a>
+            <a href="https://github.com/j-tai/jtai.ca">Source code<ExternalLink /></a>
         </div>
         <div>
             <span class="footer-title">Webring</span>
-            <a href="https://se-webring.xyz/">SE Webring</a>
+            <a href="https://se-webring.xyz/">SE Webring<ExternalLink /></a>
         </div>
     </div>
 </footer>

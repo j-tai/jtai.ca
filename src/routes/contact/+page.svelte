@@ -1,4 +1,5 @@
 <script lang="ts">
+    import ExternalLink from '$lib/ExternalLink.svelte';
     import { onMount } from 'svelte';
 
     let email = '';
@@ -22,5 +23,5 @@
 
     <p>You can contact me by email at <a href="mailto:{email}">{email}</a>.</p>
 
-    <p>You can also visit me on <a href="https://github.com/j-tai/">GitHub</a>.</p>
+    <p>You can also visit me on <a href="https://github.com/j-tai/">GitHub<ExternalLink /></a>.</p>
 </div>
