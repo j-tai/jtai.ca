@@ -2,13 +2,20 @@
     import '../app.css';
     import '@fontsource/ibm-plex-sans';
     import '@fontsource/ibm-plex-mono';
+    import ThemeSwitcher from '$lib/ThemeSwitcher.svelte';
 </script>
 
 <header>
-    <nav class="navbar bg-primary text-primary-content">
+    <!-- Can't put overflow-x-auto here, since that makes the theme switcher
+    dropdown get clipped -->
+    <nav class="navbar flex-wrap bg-primary text-primary-content">
         <a href="/" class="btn btn-ghost">Home</a>
         <a href="/projects" class="btn btn-ghost">Projects</a>
         <a href="/contact" class="btn btn-ghost">Contact</a>
+        <div class="flex-1" />
+        <div>
+            <ThemeSwitcher />
+        </div>
     </nav>
 </header>
 

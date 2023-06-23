@@ -23,7 +23,19 @@ export default {
                     ...COMMON_COLORS,
                 },
             },
+            {
+                dark: {
+                    ...themes['[data-theme=dark]'],
+                    'neutral-content': '#D0D7E5',
+                    'base-content': '#D0D7E5',
+                    'base-100': '#202632',
+                    'base-200': '#1A1F29',
+                    'base-300': '#161B24',
+                    ...COMMON_COLORS,
+                },
+            },
         ],
+        darkTheme: 'dark',
         logs: false,
     },
 } satisfies Config;
