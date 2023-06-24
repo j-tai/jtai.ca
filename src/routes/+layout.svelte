@@ -34,6 +34,7 @@
             <span class="footer-title">About</span>
             <a href="/contact">Contact</a>
             <a href="https://github.com/j-tai/jtai.ca">Source code<ExternalLink /></a>
+            <a href="/acknowledgments">Acknowledgments</a>
         </div>
         <div>
             <span class="footer-title">Webring</span>
