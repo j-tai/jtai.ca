@@ -1,10 +1,10 @@
-<svelte:head>
-    <title>Jasmine Tai | jtai.ca</title>
-</svelte:head>
+<script lang="ts">
+    import Title from '$lib/Title.svelte';
+</script>
+
+<Title value="Jasmine Tai" />
 
 <div class="text">
-    <h1>Jasmine Tai</h1>
-
     <p>
         Hi there! I'm Jasmine (she/her), and I'm a software engineering student at the University of
         Waterloo. I'm passionate about everything software and tech, from FPGAs to web development.

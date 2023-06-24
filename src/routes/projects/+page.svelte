@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Title from '$lib/Title.svelte';
     import ProjectCard from './ProjectCard.svelte';
     import type { Project } from './project';
     import { PROJECTS } from './projects';
@@ -38,13 +39,7 @@
     }
 </script>
 
-<svelte:head>
-    <title>Projects | jtai.ca</title>
-</svelte:head>
-
-<div class="text">
-    <h1>Projects</h1>
-</div>
+<Title value="Projects" />
 
 <label class="label w-full" for="search">
     <span class="label-text">Search</span>

@@ -1,5 +1,6 @@
 <script lang="ts">
     import ExternalLink from '$lib/ExternalLink.svelte';
+    import Title from '$lib/Title.svelte';
     import { onMount } from 'svelte';
 
     let email = '';
@@ -14,13 +15,9 @@
     });
 </script>
 
-<svelte:head>
-    <title>Contact | jtai.ca</title>
-</svelte:head>
+<Title value="Contact" />
 
 <div class="text">
-    <h1>Contact</h1>
-
     <p>You can contact me by email at <a href="mailto:{email}">{email}</a>.</p>
 
     <p>You can also visit me on <a href="https://github.com/j-tai/">GitHub<ExternalLink /></a>.</p>

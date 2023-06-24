@@ -1,14 +1,11 @@
 <script>
     import ExternalLink from '$lib/ExternalLink.svelte';
+    import Title from '$lib/Title.svelte';
 </script>
 
-<svelte:head>
-    <title>Acknowledgments | jtai.ca</title>
-</svelte:head>
+<Title value="Acknowledgments" />
 
 <div class="text">
-    <h1>Acknowledgments</h1>
-
     <p>
         This website uses icons from the <a href="https://carbondesignsystem.com/"
             >Carbon Design System<ExternalLink /></a
