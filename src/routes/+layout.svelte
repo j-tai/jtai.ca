@@ -1,6 +1,7 @@
 <script lang="ts">
     import '../app.css';
     import '@fontsource/ibm-plex-sans';
+    import '@fontsource/ibm-plex-sans/700.css';
     import '@fontsource/ibm-plex-mono';
     import ThemeSwitcher from '$lib/ThemeSwitcher.svelte';
     import ExternalLink from '$lib/ExternalLink.svelte';
