@@ -30,6 +30,7 @@
         <div>
             <span class="footer-title">Links</span>
             <a href="https://github.com/j-tai">GitHub<ExternalLink /></a>
+            <a rel="me" href="https://tech.lgbt/@jtai">Mastodon<ExternalLink /></a>
         </div>
         <div>
             <span class="footer-title">About</span>
