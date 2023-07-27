@@ -55,6 +55,7 @@ export const TECHNOLOGIES = {
     Gradle: '#02303a',
     Graphviz: '#2596be',
     'Node.js': '#5fa04e',
+    PostgreSQL: '#206491',
     React: '#00defb',
     'React Native': '#00defb',
     Redis: '#f40021',

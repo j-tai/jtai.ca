@@ -2,29 +2,21 @@ import type { Project } from './project';
 
 export const PROJECTS: Project[] = [
     {
-        name: 'jtai.ca',
-        url: 'https://github.com/j-tai/jtai.ca',
-        description: 'Personal website',
-        date: [2023, 2023],
-        technologies: ['SvelteKit', 'TypeScript', 'Tailwind CSS', 'DaisyUI', 'Cloudflare'],
-        moreTechnologies: ['Svelte', 'Node.js', 'npm', 'PostCSS', 'CSS', 'HTML', 'JavaScript'],
-    },
-
-    {
-        name: 'homepage',
+        name: 'Home',
         description:
             'Personal home dashboard and search engine, including a to-do list, ' +
             'notes app, music player, and more',
         date: [2017, 2023],
-        technologies: ['SvelteKit', 'TypeScript', 'SQLite', 'Redis', 'Tailwind CSS', 'DaisyUI'],
+        technologies: ['SvelteKit', 'TypeScript', 'Rust', 'PostgreSQL', 'Redis', 'Tailwind CSS'],
         moreTechnologies: [
+            // More:
             'Python',
-            'SQL',
+            'DaisyUI',
             'tRPC',
             'TypeORM',
             'Cloudflare',
-            'React',
-            'Rust',
+            // Implied:
+            'SQL',
             'Svelte',
             'Node.js',
             'npm',
@@ -32,7 +24,19 @@ export const PROJECTS: Project[] = [
             'CSS',
             'HTML',
             'JavaScript',
+            // Formerly used:
+            'SQLite',
+            'React',
         ],
+    },
+
+    {
+        name: 'jtai.ca',
+        url: 'https://github.com/j-tai/jtai.ca',
+        description: 'Personal website',
+        date: [2023, 2023],
+        technologies: ['SvelteKit', 'TypeScript', 'Tailwind CSS', 'DaisyUI', 'Cloudflare'],
+        moreTechnologies: ['Svelte', 'Node.js', 'npm', 'PostCSS', 'CSS', 'HTML', 'JavaScript'],
     },
 
     {
