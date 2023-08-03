@@ -40,15 +40,6 @@ export const PROJECTS: Project[] = [
     },
 
     {
-        name: 'TieFix',
-        url: 'https://github.com/j-tai/TieFix',
-        description: 'Minecraft mod that fixes some annoying bugs in the game',
-        date: [2020, 2023],
-        technologies: ['Java', 'Gradle', 'Groovy'],
-        moreTechnologies: [],
-    },
-
-    {
         name: 'packager',
         description: 'Generate Debian and Arch Linux packages from simple scripts written in YAML',
         date: [2022, 2023],
