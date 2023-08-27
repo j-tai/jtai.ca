@@ -9,15 +9,14 @@
     import NavbarLink from './NavbarLink.svelte';
 </script>
 
-<header>
+<header class="bg-primary text-primary-content">
     <!-- Can't put overflow-x-auto here, since that makes the theme switcher
     dropdown get clipped -->
-    <nav class="navbar flex-wrap bg-primary text-primary-content gap-x-2">
+    <nav class="navbar flex-wrap gap-x-2">
         <NavbarLink href="/">Home</NavbarLink>
         <NavbarLink href="/projects">Projects</NavbarLink>
         <NavbarLink href="/contact">Contact</NavbarLink>
-        <div class="flex-1" />
-        <div>
+        <div class="flex-1 flex flex-row justify-end">
             <ThemeSwitcher />
         </div>
     </nav>
@@ -48,6 +47,7 @@
 </footer>
 
 <style lang="postcss">
+    nav,
     main,
     footer > div {
         @apply mx-auto;
