@@ -15,6 +15,14 @@ kbd {
     font-family: 'IBM Plex Mono', monospace;
 }
 
+/* For headings, use Delius font */
+
+h1,
+h2,
+.font-heading {
+    font-family: 'Delius', sans-serif;
+}
+
 /* Components */
 
 @layer components {

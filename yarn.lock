@@ -154,6 +154,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.43.0.tgz#559ca3d9ddbd6bf907ad524320a0d14b85586af0"
   integrity sha512-s2UHCoiXfxMvmfzqoN+vrQ84ahUSYde9qNO1MdxmoEhyHWsfmwOpFlwYV+ePJEVc7gFnATGUi376WowX1N7tFg==
 
+"@fontsource/delius@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/delius/-/delius-5.0.8.tgz#f707d1be3d456a6838a6319b2523c0543e600d2b"
+  integrity sha512-10ViInMqHun746svYeJEcD4qsNTqd1Wt0XuYrBxBy922Mi3G9R73ngpRwxSovmZ1crTZoYjv3T3DCEpcZYYspg==
+
 "@fontsource/ibm-plex-mono@^5.0.3":
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/@fontsource/ibm-plex-mono/-/ibm-plex-mono-5.0.3.tgz#5859a4f21724166a77f95c4b7135f6b19cfec071"

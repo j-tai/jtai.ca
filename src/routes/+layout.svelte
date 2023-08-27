@@ -3,17 +3,19 @@
     import '@fontsource/ibm-plex-sans';
     import '@fontsource/ibm-plex-sans/700.css';
     import '@fontsource/ibm-plex-mono';
+    import '@fontsource/delius/latin-400.css';
     import ThemeSwitcher from '$lib/ThemeSwitcher.svelte';
     import ExternalLink from '$lib/ExternalLink.svelte';
+    import NavbarLink from './NavbarLink.svelte';
 </script>
 
 <header>
     <!-- Can't put overflow-x-auto here, since that makes the theme switcher
     dropdown get clipped -->
-    <nav class="navbar flex-wrap bg-primary text-primary-content">
-        <a href="/" class="btn btn-ghost">Home</a>
-        <a href="/projects" class="btn btn-ghost">Projects</a>
-        <a href="/contact" class="btn btn-ghost">Contact</a>
+    <nav class="navbar flex-wrap bg-primary text-primary-content gap-x-2">
+        <NavbarLink href="/">Home</NavbarLink>
+        <NavbarLink href="/projects">Projects</NavbarLink>
+        <NavbarLink href="/contact">Contact</NavbarLink>
         <div class="flex-1" />
         <div>
             <ThemeSwitcher />
