@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import BrightnessContrast from 'carbon-icons-svelte/lib/BrightnessContrast.svelte';
+    import Dropdown from './Dropdown.svelte';
 
     const THEMES = [
         ['', 'System'],
@@ -36,21 +37,13 @@
     </script>
 </svelte:head>
 
-<div class="dropdown dropdown-end">
-    <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-    <!-- svelte-ignore a11y-label-has-associated-control -->
-    <label tabindex="0" class="btn btn-ghost btn-square"><BrightnessContrast size={24} /></label>
-    <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-    <ul
-        tabindex="0"
-        class="dropdown-content z-10 menu shadow bg-base-200 rounded-box w-28 text-base-content"
-    >
-        {#each THEMES as [theme, name] (theme)}
-            <li>
-                <button class:active={theme === currentTheme} on:click={() => chooseTheme(theme)}>
-                    {name}
-                </button>
-            </li>
-        {/each}
-    </ul>
-</div>
+<Dropdown class="dropdown-end" buttonClass="btn-ghost" dropClass="w-24 text-base-content">
+    <BrightnessContrast slot="button" size={24} title="Theme" />
+    {#each THEMES as [theme, name] (theme)}
+        <li>
+            <button class:active={theme === currentTheme} on:click={() => chooseTheme(theme)}>
+                {name}
+            </button>
+        </li>
+    {/each}
+</Dropdown>
