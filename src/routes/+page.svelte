@@ -12,8 +12,8 @@
     <p>
         I first learned to code in 2014, starting with Python, then Java, then a whole bunch of
         other languages. I've been using Linux as my daily driver since 2017, and I've also been
-        running a home Linux server since 2018. My favourite languages are Rust and Python. In my
-        free time, I like to develop web apps, mod video games, play the piano, and crochet.
+        running a home Linux server since 2018. My favourite languages are Rust and Python. During
+        my free time, I like to develop web apps, mod video games, play the piano, and crochet.
     </p>
 
     <p>Check out some of my <a href="/projects">projects</a>.</p>
