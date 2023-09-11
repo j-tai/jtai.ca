@@ -40,6 +40,14 @@ export const PROJECTS: Project[] = [
     },
 
     {
+        name: 'marks',
+        description: 'Advanced marks spreadsheet calculator for the command-line',
+        date: [2023, 2023],
+        technologies: ['Rust'],
+        moreTechnologies: [],
+    },
+
+    {
         name: 'packager',
         description: 'Generate Debian and Arch Linux packages from simple scripts written in YAML',
         date: [2022, 2023],
