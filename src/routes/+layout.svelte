@@ -30,6 +30,7 @@
     <div class="footer p-8">
         <div>
             <span class="footer-title">Links</span>
+            <a href="https://en.pronouns.page/@jtai">Pronouns.page<ExternalLink /></a>
             <a href="https://github.com/j-tai">GitHub<ExternalLink /></a>
             <a rel="me" href="https://tech.lgbt/@jtai">Mastodon<ExternalLink /></a>
         </div>
