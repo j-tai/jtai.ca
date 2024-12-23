@@ -999,6 +999,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@skeletonlabs/skeleton@npm:^2.10.4":
+  version: 2.10.4
+  resolution: "@skeletonlabs/skeleton@npm:2.10.4"
+  dependencies:
+    esm-env: "npm:1.0.0"
+  peerDependencies:
+    svelte: ^3.56.0 || ^4.0.0 || ^5.0.0
+  checksum: 10c0/98bf6aeff097cd4ccf9e9476cf4164b9ef3a2f5ba09bfcbed4f77a0cfc6bb44a9c02864885a39339f70a0fb6f2f71306471ebc8345609219b806271447d04a96
+  languageName: node
+  linkType: hard
+
+"@skeletonlabs/tw-plugin@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@skeletonlabs/tw-plugin@npm:0.4.0"
+  peerDependencies:
+    tailwindcss: ">=3.0.0"
+  checksum: 10c0/766b4ece672f9c7b45eaced238459a640e939d3f6b49fd644c1884b105eb3898f6e90b86a37df26cd47d87feba277492c80250ecd0854848a764e83cbb1e7ed3
+  languageName: node
+  linkType: hard
+
 "@sveltejs/adapter-cloudflare@npm:^4.8.0":
   version: 4.9.0
   resolution: "@sveltejs/adapter-cloudflare@npm:4.9.0"
@@ -1124,7 +1144,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:^22.10.2":
   version: 22.10.2
   resolution: "@types/node@npm:22.10.2"
   dependencies:
@@ -2138,6 +2158,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"esm-env@npm:1.0.0":
+  version: 1.0.0
+  resolution: "esm-env@npm:1.0.0"
+  checksum: 10c0/6ea0001410224ebc18de4a83ce97dbdca6abc83ea4bbe91625aa3aead70793bb98dfa089f38e2cc5c13b7b025668d0649d5e25f2f9e8cca0f4aa3ad3406870d0
+  languageName: node
+  linkType: hard
+
 "esm-env@npm:^1.2.1":
   version: 1.2.1
   resolution: "esm-env@npm:1.2.1"
@@ -2711,11 +2738,14 @@ __metadata:
   resolution: "jtai.ca@workspace:."
   dependencies:
     "@eslint/compat": "npm:^1.2.3"
+    "@skeletonlabs/skeleton": "npm:^2.10.4"
+    "@skeletonlabs/tw-plugin": "npm:^0.4.0"
     "@sveltejs/adapter-cloudflare": "npm:^4.8.0"
     "@sveltejs/kit": "npm:^2.0.0"
     "@sveltejs/vite-plugin-svelte": "npm:^4.0.0"
     "@tailwindcss/forms": "npm:^0.5.9"
     "@tailwindcss/typography": "npm:^0.5.15"
+    "@types/node": "npm:^22.10.2"
     autoprefixer: "npm:^10.4.20"
     eslint: "npm:^9.7.0"
     eslint-config-prettier: "npm:^9.1.0"
