@@ -38,8 +38,18 @@
     align="right"
     {...props}
     onclick={() => (alternate = !alternate)}
-    onmouseenter={() => (hovering = true)}
-    onmouseleave={() => ((hovering = false), (alternate = false))}
+    onpointerenter={(e) => {
+        // For touch and stylus, user must click
+        if (e.pointerType === 'mouse') {
+            hovering = true;
+        }
+    }}
+    onpointerleave={(e) => {
+        if (e.pointerType === 'mouse') {
+            hovering = false;
+            alternate = false;
+        }
+    }}
 >
     {#if init}
         {#each lines as line (line.key)}
