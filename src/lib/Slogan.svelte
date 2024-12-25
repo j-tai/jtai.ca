@@ -12,10 +12,10 @@
     onMount(() => (init = true));
 
     let hovering = $state(false);
-    let clicked = $state(false);
+    let alternate = $state(false);
 
     let lines = $derived.by(() => {
-        if (hovering || clicked) {
+        if (hovering !== alternate) {
             return [
                 { key: 1, words: ['art', '\u00a0', 'is'] },
                 { key: 0, words: ['software'] },
@@ -37,9 +37,9 @@
 <Heading
     align="right"
     {...props}
-    onclick={() => (clicked = !clicked)}
+    onclick={() => (alternate = !alternate)}
     onmouseenter={() => (hovering = true)}
-    onmouseleave={() => (hovering = false)}
+    onmouseleave={() => ((hovering = false), (alternate = false))}
 >
     {#if init}
         {#each lines as line (line.key)}
