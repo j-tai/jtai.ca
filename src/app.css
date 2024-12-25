@@ -1,7 +1,12 @@
 @import '@flaticon/flaticon-uicons/css/regular/rounded';
+@import '@fontsource-variable/quicksand';
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+body {
+    font-family: 'Quicksand Variable';
+}
 
 .fi {
     /* Icons are always block displayed */
