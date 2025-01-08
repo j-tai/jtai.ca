@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Quicksand Variable';
+    overflow-x: hidden;
 }
 
 * {

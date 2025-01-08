@@ -2,6 +2,7 @@
     import Footer from '$lib/Footer.svelte';
     import IntroAnimation from '$lib/IntroAnimation.svelte';
     import Slogan from '$lib/Slogan.svelte';
+    import ThemedImg from '$lib/ThemedImg.svelte';
     import TocBar from '$lib/TocBar.svelte';
 
     let aboutDiv: HTMLDivElement;
@@ -25,6 +26,20 @@
             </IntroAnimation>
 
             <IntroAnimation intro="animate-fade">
+                <div class="flex flex-row items-end justify-start">
+                    <div class="hidden pl-32 pr-4 min-[480px]:block">
+                        <img src="/img/arrow1.svg" alt="loopy arrow pointing right" class="h-24" />
+                    </div>
+                    <div class="flex-1 min-[480px]:hidden"></div>
+                    <div class="flex-none pb-4">
+                        <img
+                            src="/img/me.jpg"
+                            alt="Jasmine's face"
+                            class="h-32 flex-none rounded-full"
+                        />
+                    </div>
+                </div>
+
                 <p>
                     Hello! I'm Jasmine (she/her), and I'm a Software Engineering student at the
                     University of Waterloo!
@@ -58,7 +73,21 @@
                 </p>
             </IntroAnimation>
 
-            <IntroAnimation intro="animate-fade">[image]</IntroAnimation>
+            <IntroAnimation
+                intro="animate-fade"
+                class="flex h-32 flex-row justify-end gap-12 md:justify-start"
+            >
+                <ThemedImg
+                    lightSrc="/img/website-light.png"
+                    darkSrc="/img/website-dark.png"
+                    alt="icon of a website"
+                />
+                <ThemedImg
+                    lightSrc="/img/ai-light.png"
+                    darkSrc="/img/ai-dark.png"
+                    alt="icon of artificial intelligence"
+                />
+            </IntroAnimation>
             <IntroAnimation intro="animate-fade">
                 <p>
                     I first learned to code in 2014, starting with Python, then Java, then a whole
