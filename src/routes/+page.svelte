@@ -124,12 +124,18 @@
             </IntroAnimation>
 
             <IntroAnimation intro="animate-fade">
-                <div class="links flex flex-row items-center gap-6 text-8xl">
-                    <a href="https://www.linkedin.com/in/taijasmine/" aria-label="LinkedIn">
+                <div
+                    class="links flex flex-row items-center justify-end gap-6 text-8xl md:justify-start"
+                >
+                    <a
+                        href="https://www.linkedin.com/in/taijasmine/"
+                        target="_blank"
+                        aria-label="LinkedIn"
+                    >
                         <i class="fi fi-brands-linkedin"></i>
                     </a>
 
-                    <a href="https://github.com/j-tai" aria-label="GitHub">
+                    <a href="https://github.com/j-tai" target="_blank" aria-label="GitHub">
                         <i class="fi fi-brands-github"></i>
                     </a>
                 </div>
