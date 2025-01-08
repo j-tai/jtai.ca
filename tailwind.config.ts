@@ -15,16 +15,16 @@ export default {
     theme: {
         extend: {
             animation: {
-                'fly-above': 'fly-above 1.5s ease-out',
-                'fly-below': 'fly-below 1.5s ease-out',
-                'fly-left': 'fly-left 1.5s ease-out',
-                'fly-right': 'fly-right 1.5s ease-out',
-                fade: 'fade 1.5s ease-in-out',
+                'fly-above': 'fly-above 1s ease-out',
+                'fly-below': 'fly-below 1s ease-out',
+                'fly-left': 'fly-left 1s ease-out',
+                'fly-right': 'fly-right 1s ease-out',
+                fade: 'fade 1s ease-in-out',
             },
 
             keyframes: (() => {
                 const fly = (translation: string) => ({
-                    '0%, 35%': {
+                    '0%, 15%': {
                         translate: translation,
                         opacity: '0',
                     },
@@ -41,7 +41,7 @@ export default {
                     'fly-right': fly('40svw 0'),
 
                     fade: {
-                        '0%, 50%': { opacity: '0' },
+                        '0%, 25%': { opacity: '0' },
                         to: { opacity: '1' },
                     },
                 };
