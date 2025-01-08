@@ -9,6 +9,10 @@
     let aboutDiv: HTMLDivElement;
 </script>
 
+<svelte:head>
+    <title>Jasmine Tai | jtai.ca</title>
+</svelte:head>
+
 <TocBar
     items={[
         { id: 'home', name: 'Home' },
