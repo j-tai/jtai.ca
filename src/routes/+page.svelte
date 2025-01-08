@@ -117,7 +117,17 @@
                 <h2 class="heading text-right">Contact</h2>
             </IntroAnimation>
 
-            <IntroAnimation intro="animate-fade">[icons]</IntroAnimation>
+            <IntroAnimation intro="animate-fade">
+                <div class="links flex flex-row items-center gap-6 text-8xl">
+                    <a href="https://www.linkedin.com/in/taijasmine/" aria-label="LinkedIn">
+                        <i class="fi fi-brands-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/j-tai" aria-label="GitHub">
+                        <i class="fi fi-brands-github"></i>
+                    </a>
+                </div>
+            </IntroAnimation>
         </div>
     </div>
 </main>
@@ -138,6 +148,14 @@
 
         p {
             @apply text-lg sm:text-xl;
+        }
+
+        .links a {
+            @apply opacity-75 transition-opacity;
+
+            &:hover {
+                @apply opacity-100;
+            }
         }
     }
 </style>
