@@ -1,6 +1,7 @@
 <script lang="ts">
     import Footer from '$lib/Footer.svelte';
     import IntroAnimation from '$lib/IntroAnimation.svelte';
+    import ProjectCarousel from '$lib/ProjectCarousel.svelte';
     import Slogan from '$lib/Slogan.svelte';
     import ThemedImg from '$lib/ThemedImg.svelte';
     import TocBar from '$lib/TocBar.svelte';
@@ -101,12 +102,17 @@
 
     <!-- Projects -->
     <div id="projects">
-        <div class="dynamic-grid">
-            <IntroAnimation intro="animate-fly-right" class="md:col-start-2">
-                <h2 class="heading text-right md:text-left">Projects</h2>
+        <div class="dynamic-grid-lg">
+            <IntroAnimation intro="animate-fly-right" class="lg:col-start-2">
+                <h2 class="heading text-right lg:text-left">Projects</h2>
+            </IntroAnimation>
+            <IntroAnimation intro="animate-fade" class="lg:col-start-2">
+                <p>I've made so many projects over the years. Here are some of my highlights!</p>
             </IntroAnimation>
 
-            <IntroAnimation intro="animate-fade" class="md:row-start-1">[projects]</IntroAnimation>
+            <IntroAnimation intro="animate-fade" class="lg:row-span-3 lg:row-start-1">
+                <ProjectCarousel />
+            </IntroAnimation>
         </div>
     </div>
 
@@ -144,10 +150,14 @@
             &.dynamic-grid {
                 @apply grid grid-cols-1 md:grid-cols-2;
             }
+
+            &.dynamic-grid-lg {
+                @apply grid grid-cols-1 lg:grid-cols-2;
+            }
         }
 
         p {
-            @apply text-lg sm:text-xl;
+            @apply text-lg font-semibold sm:text-xl;
         }
 
         .links a {
