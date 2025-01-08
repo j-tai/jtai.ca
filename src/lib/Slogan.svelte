@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { type HTMLAttributes } from 'svelte/elements';
-    import { type FlipParams } from 'svelte/animate';
+    import type { HTMLAttributes } from 'svelte/elements';
+    import type { FlipParams } from 'svelte/animate';
     import { quadInOut } from 'svelte/easing';
     import { partialFlip } from './partial-flip';
 
