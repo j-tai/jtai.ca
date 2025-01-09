@@ -33,7 +33,7 @@
         {#each items as item (item.id)}
             <a
                 href="#{item.id}"
-                class="px-4 py-3 text-2xl lowercase"
+                class="px-3 py-2 text-lg lowercase sm:px-4 sm:py-3 sm:text-2xl"
                 class:current={item.id === activeId}
             >
                 {item.name}

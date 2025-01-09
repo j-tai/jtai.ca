@@ -29,10 +29,10 @@ body {
     }
 
     h1.heading {
-        @apply text-8xl font-extralight sm:text-[7rem];
+        @apply xs:text-8xl text-[5rem] font-extralight sm:text-[7rem];
     }
 
     h2.heading {
-        @apply text-7xl font-light sm:text-8xl;
+        @apply xs:text-[5rem] text-7xl font-light sm:text-8xl;
     }
 }

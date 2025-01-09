@@ -1,7 +1,6 @@
 <script lang="ts">
     import { PROJECTS } from './projects';
     import TechnologyBadge from './TechnologyBadge.svelte';
-    import ThemedImg from './ThemedImg.svelte';
 
     let carousel: HTMLDivElement;
 
@@ -24,12 +23,20 @@
 
 <div class="mx-auto grid w-full max-w-xl grid-cols-[auto_1fr_auto] items-center gap-4 p-4">
     <!-- Left button -->
-    <button type="button" class="variant-filled btn-icon" onclick={left} aria-label="previous">
+    <button
+        type="button"
+        class="variant-filled btn-icon max-xs:col-start-1 max-xs:row-start-2"
+        onclick={left}
+        aria-label="previous"
+    >
         <i class="fi fi-rr-angle-left"></i>
     </button>
 
     <!-- Entries -->
-    <div bind:this={carousel} class="flex snap-x snap-mandatory gap-4 overflow-x-auto">
+    <div
+        bind:this={carousel}
+        class="flex snap-x snap-mandatory gap-4 overflow-x-auto max-xs:col-span-full max-xs:row-start-1"
+    >
         {#each PROJECTS as project (project.name)}
             <a
                 href={project.href}
@@ -52,7 +59,12 @@
     </div>
 
     <!-- Right button -->
-    <button type="button" class="variant-filled btn-icon" onclick={right} aria-label="next">
+    <button
+        type="button"
+        class="variant-filled btn-icon max-xs:col-start-3 max-xs:row-start-2"
+        onclick={right}
+        aria-label="next"
+    >
         <i class="fi fi-rr-angle-right"></i>
     </button>
 </div>
@@ -73,8 +85,8 @@
             background: linear-gradient(
                 to bottom,
                 rgb(var(--color-surface-900) / 0.05) 0%,
-                rgb(var(--color-surface-900) / 0.35) 40%,
-                rgb(var(--color-surface-900) / 0.65) 60%,
+                rgb(var(--color-surface-900) / 0.3) 40%,
+                rgb(var(--color-surface-900) / 0.6) 60%,
                 rgb(var(--color-surface-900) / 0.95) 100%
             );
         }

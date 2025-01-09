@@ -107,7 +107,7 @@
     <!-- Projects -->
     <div id="projects">
         <div class="dynamic-grid-lg">
-            <IntroAnimation intro="animate-fly-right" class="lg:col-start-2">
+            <IntroAnimation intro="animate-fly-left lg:animate-fly-right" class="lg:col-start-2">
                 <h2 class="heading text-right lg:text-left">Projects</h2>
             </IntroAnimation>
             <IntroAnimation intro="animate-fade" class="lg:col-start-2">
