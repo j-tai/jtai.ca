@@ -96,7 +96,7 @@ export const PROJECTS: Project[] = [
         href: 'https://songmaid.jtai.ca',
         description: 'Self-hosted music streaming service',
         date: [2024, 2025],
-        technologies: ['Rust', 'GraphQL', 'TypeScript', 'SvelteKit', 'Tailwind CSS'],
+        technologies: ['Rust', 'SQLite', 'GraphQL', 'TypeScript', 'SvelteKit', 'Tailwind CSS'],
         moreTechnologies: [
             'nginx',
             'Cloudflare',
@@ -106,6 +106,7 @@ export const PROJECTS: Project[] = [
             'CSS',
             'HTML',
             'JavaScript',
+            'SQL',
         ],
     },
 
@@ -114,7 +115,7 @@ export const PROJECTS: Project[] = [
         href: 'https://nexus.jtai.ca',
         description: 'Super simple single-sign-on (SSO) system',
         date: [2024, 2024],
-        technologies: ['Rust', 'GraphQL', 'TypeScript', 'SvelteKit', 'Tailwind CSS'],
+        technologies: ['Rust', 'SQLite', 'GraphQL', 'TypeScript', 'SvelteKit', 'Tailwind CSS'],
         moreTechnologies: [
             'Cloudflare',
             'Svelte',
@@ -123,6 +124,7 @@ export const PROJECTS: Project[] = [
             'CSS',
             'HTML',
             'JavaScript',
+            'SQL',
         ],
     },
 
