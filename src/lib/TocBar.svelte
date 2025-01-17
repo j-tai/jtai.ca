@@ -28,7 +28,7 @@
 
 <svelte:document onscroll={update} />
 
-<nav class="sticky top-0 overflow-x-auto bg-surface-200">
+<nav class="sticky top-0 z-50 overflow-x-auto bg-surface-200">
     <div class="mx-auto flex w-fit flex-row justify-center px-4">
         {#each items as item (item.id)}
             <a
