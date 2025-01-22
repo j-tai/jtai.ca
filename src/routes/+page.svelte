@@ -1,12 +1,19 @@
 <script lang="ts">
     import Footer from '$lib/Footer.svelte';
     import IntroAnimation from '$lib/IntroAnimation.svelte';
+    import { demangle } from '$lib/mangle';
     import ProjectCarousel from '$lib/ProjectCarousel.svelte';
     import Slogan from '$lib/Slogan.svelte';
     import ThemedImg from '$lib/ThemedImg.svelte';
     import TocBar from '$lib/TocBar.svelte';
+    import { onMount } from 'svelte';
 
     let aboutDiv: HTMLDivElement;
+
+    let emailAddress = $state('#');
+    onMount(() => {
+        emailAddress = demangle("\x0E\x027Iply`ZH\x10v\nq_'{'\x14");
+    });
 </script>
 
 <svelte:head>
@@ -141,6 +148,10 @@
 
                     <a href="https://github.com/j-tai" target="_blank" aria-label="GitHub">
                         <i class="fi fi-brands-github"></i>
+                    </a>
+
+                    <a href={emailAddress} aria-label="Email">
+                        <i class="fi fi-rr-envelope"></i>
                     </a>
                 </div>
             </IntroAnimation>
