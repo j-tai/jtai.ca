@@ -1,7 +1,7 @@
 name = jan Jasamin Ta
 site = jtai.ca
 
-toc-home = tomo
+toc-home = open
 toc-about = sona
 toc-projects = pali
 toc-contact = toki
