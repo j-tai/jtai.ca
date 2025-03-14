@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { tl } from './i18n';
+    import LanguageSwitcher from './LanguageSwitcher.svelte';
 
     let { items }: { items: string[] } = $props();
     let activeId = $state('');
@@ -23,7 +24,7 @@
 <svelte:document onscroll={update} />
 
 <nav class="sticky top-0 z-50 overflow-x-auto bg-surface-200">
-    <div class="mx-auto flex w-fit flex-row justify-center px-4">
+    <div class="mx-auto flex w-fit flex-row items-center justify-center px-4">
         {#each items as item (item)}
             <a
                 href="#{item}"
@@ -33,6 +34,9 @@
                 {tl('toc-' + item)}
             </a>
         {/each}
+        <div class="border-b-4 border-transparent px-3 sm:px-4">
+            <LanguageSwitcher />
+        </div>
     </div>
 </nav>
 
