@@ -702,6 +702,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fluent/bundle@npm:^0.18.0":
+  version: 0.18.0
+  resolution: "@fluent/bundle@npm:0.18.0"
+  checksum: 10c0/da01cec9c79d339ea973e2c4ca5d610d7e243b12298d3300a04ce44da10511e8b38ae2bbacc296433d9f458c59d5fe6097d138d8ea2aa205ee5b6b2583cfd277
+  languageName: node
+  linkType: hard
+
+"@fluent/langneg@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@fluent/langneg@npm:0.7.0"
+  checksum: 10c0/081f8fb3f11cecae91647e8dfd70966fdcd93b1ca531eb4dc36cf867d33f8e4196f5fe2e9d0d3ada163d6cf810aef98c781fbdcff218a1c7fc83106162425ab2
+  languageName: node
+  linkType: hard
+
 "@fontsource-variable/quicksand@npm:^5.1.0":
   version: 5.1.0
   resolution: "@fontsource-variable/quicksand@npm:5.1.0"
@@ -819,6 +833,18 @@ __metadata:
     "@jridgewell/resolve-uri": "npm:^3.1.0"
     "@jridgewell/sourcemap-codec": "npm:^1.4.14"
   checksum: 10c0/3d1ce6ebc69df9682a5a8896b414c6537e428a1d68b02fcc8363b04284a8ca0df04d0ee3013132252ab14f2527bc13bea6526a912ecb5658f0e39fd2860b4df4
+  languageName: node
+  linkType: hard
+
+"@jtai/toolskit-i18n@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "@jtai/toolskit-i18n@npm:0.2.1::__archiveUrl=https%3A%2F%2Fgit.jtai.ca%2Fapi%2Fpackages%2Fjtai%2Fnpm%2F%2540jtai%252Ftoolskit-i18n%2F-%2F0.2.1%2Ftoolskit-i18n-0.2.1.tgz"
+  dependencies:
+    "@fluent/bundle": "npm:^0.18.0"
+    "@fluent/langneg": "npm:^0.7.0"
+  peerDependencies:
+    svelte: ^5.0.0
+  checksum: 10c0/6d7a99b91973e16b5c8b0c5acb3082806d570f2a6430ed63af0b5d1b3587bf1d31d38f27ce53c04ccd626f914f3261ce763e5d8964960cea1897a409c51fd622
   languageName: node
   linkType: hard
 
@@ -2766,6 +2792,7 @@ __metadata:
     "@eslint/compat": "npm:^1.2.3"
     "@flaticon/flaticon-uicons": "npm:^3.3.1"
     "@fontsource-variable/quicksand": "npm:^5.1.0"
+    "@jtai/toolskit-i18n": "npm:^0.2.1"
     "@skeletonlabs/skeleton": "npm:^2.10.4"
     "@skeletonlabs/tw-plugin": "npm:^0.4.0"
     "@sveltejs/adapter-cloudflare": "npm:^4.8.0"

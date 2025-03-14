@@ -63,9 +63,8 @@ export const TECHNOLOGIES = {
 export type Technology = keyof typeof TECHNOLOGIES;
 
 export interface Project {
-    name: string;
+    id: string;
     href?: string;
-    description: string;
     date: [number, number];
     /** Technologies used in the project */
     technologies: Technology[];
@@ -75,9 +74,8 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
     {
-        name: 'ComMaid',
+        id: 'commaid',
         href: 'https://commaid.jtai.ca',
-        description: 'Communication aid for Deaf and non-Deaf people',
         date: [2024, 2025],
         technologies: ['Rust', 'TypeScript', 'SvelteKit', 'Tailwind CSS'],
         moreTechnologies: [
@@ -92,9 +90,8 @@ export const PROJECTS: Project[] = [
     },
 
     {
-        name: 'SongMaid',
+        id: 'songmaid',
         href: 'https://songmaid.jtai.ca',
-        description: 'Self-hosted music streaming service',
         date: [2024, 2025],
         technologies: ['Rust', 'SQLite', 'GraphQL', 'TypeScript', 'SvelteKit', 'Tailwind CSS'],
         moreTechnologies: [
@@ -111,9 +108,8 @@ export const PROJECTS: Project[] = [
     },
 
     {
-        name: 'Nexus',
+        id: 'nexus',
         href: 'https://nexus.jtai.ca',
-        description: 'Super simple single-sign-on (SSO) system',
         date: [2024, 2024],
         technologies: ['Rust', 'SQLite', 'GraphQL', 'TypeScript', 'SvelteKit', 'Tailwind CSS'],
         moreTechnologies: [
@@ -129,18 +125,16 @@ export const PROJECTS: Project[] = [
     },
 
     {
-        name: 'pigeon',
+        id: 'pigeon',
         href: 'https://git.jtai.ca/jtai/pigeon',
-        description: 'Versatile command-line email sender',
         date: [2024, 2024],
         technologies: ['Rust', 'HTML', 'YAML'],
         moreTechnologies: [],
     },
 
     {
-        name: 'Home',
+        id: 'home',
         href: 'https://home.jtai.ca',
-        description: 'Personal home dashboard and search engine',
         date: [2017, 2023],
         technologies: ['SvelteKit', 'TypeScript', 'Rust', 'PostgreSQL', 'Redis', 'Tailwind CSS'],
         moreTechnologies: [

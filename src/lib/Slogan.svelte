@@ -3,6 +3,7 @@
     import type { FlipParams } from 'svelte/animate';
     import { quadInOut } from 'svelte/easing';
     import { partialFlip } from './partial-flip';
+    import { tl } from './i18n';
 
     let { class: classes, ...props }: HTMLAttributes<HTMLHeadingElement> = $props();
 
@@ -12,13 +13,13 @@
     let lines = $derived.by(() => {
         if (hovering !== alternate) {
             return [
-                { key: 1, words: ['Art', '\u00a0', 'is'] },
-                { key: 0, words: ['Software'] },
+                { key: 1, words: [tl('slogan-3'), '\u00a0', tl('slogan-2')] },
+                { key: 0, words: [tl('slogan-1')] },
             ];
         } else {
             return [
-                { key: 0, words: ['Software'] },
-                { key: 1, words: ['is', '\u00a0', 'Art'] },
+                { key: 0, words: [tl('slogan-1')] },
+                { key: 1, words: [tl('slogan-2'), '\u00a0', tl('slogan-3')] },
             ];
         }
     });

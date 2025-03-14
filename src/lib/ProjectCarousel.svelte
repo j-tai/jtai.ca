@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { tl } from './i18n';
     import { PROJECTS } from './projects';
     import TechnologyBadge from './TechnologyBadge.svelte';
 
@@ -37,17 +38,17 @@
         bind:this={carousel}
         class="flex snap-x snap-mandatory gap-4 overflow-x-auto max-xs:col-span-full max-xs:row-start-1"
     >
-        {#each PROJECTS as project (project.name)}
+        {#each PROJECTS as project (project.id)}
             <a
                 href={project.href}
                 target="_blank"
                 class="aspect-square flex-none basis-full snap-center text-surface-100 rounded-container-token"
-                style="--light-bg: url(/img/project/{project.name}-light.png);
-                       --dark-bg: url(/img/project/{project.name}-dark.png)"
+                style="--light-bg: url(/img/project/{project.id}-light.png);
+                       --dark-bg: url(/img/project/{project.id}-dark.png)"
             >
                 <div class="flex h-full w-full flex-col justify-end space-y-2 p-4">
-                    <h3 class="text-4xl">{project.name}</h3>
-                    <p class="text-lg font-semibold">{project.description}</p>
+                    <h3 class="text-4xl">{tl(`proj-${project.id}`)}</h3>
+                    <p class="text-lg font-semibold">{tl(`proj-${project.id}-info`)}</p>
                     <p class="flex flex-row flex-wrap items-start gap-x-2 gap-y-1.5">
                         {#each project.technologies as technology}
                             <TechnologyBadge {technology} />

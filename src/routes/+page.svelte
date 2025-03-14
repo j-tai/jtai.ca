@@ -1,5 +1,6 @@
 <script lang="ts">
     import Footer from '$lib/Footer.svelte';
+    import { tl } from '$lib/i18n';
     import IntroAnimation from '$lib/IntroAnimation.svelte';
     import { demangle } from '$lib/mangle';
     import ProjectCarousel from '$lib/ProjectCarousel.svelte';
@@ -17,17 +18,10 @@
 </script>
 
 <svelte:head>
-    <title>Jasmine Tai | jtai.ca</title>
+    <title>{tl('name')} | {tl('site')}</title>
 </svelte:head>
 
-<TocBar
-    items={[
-        { id: 'home', name: 'Home' },
-        { id: 'about', name: 'About' },
-        { id: 'projects', name: 'Projects' },
-        { id: 'contact', name: 'Contact' },
-    ]}
-/>
+<TocBar items={['home', 'about', 'projects', 'contact']} />
 
 <main>
     <!-- Home -->
@@ -40,22 +34,19 @@
             <IntroAnimation intro="animate-fade">
                 <div class="flex flex-row items-end justify-start">
                     <div class="hidden pl-32 pr-4 min-[480px]:block">
-                        <img src="/img/arrow1.svg" alt="loopy arrow pointing right" class="h-24" />
+                        <img src="/img/arrow1.svg" alt={tl('image-arrow')} class="h-24" />
                     </div>
                     <div class="flex-1 min-[480px]:hidden"></div>
                     <div class="flex-none pb-4">
                         <img
                             src="/img/me.jpg"
-                            alt="Jasmine's face"
+                            alt={tl('image-face')}
                             class="h-32 flex-none rounded-full"
                         />
                     </div>
                 </div>
 
-                <p>
-                    Hello! I'm Jasmine (she/her), and I'm a Software Engineering student at the
-                    University of Waterloo!
-                </p>
+                <p>{tl('hello')}</p>
             </IntroAnimation>
         </div>
     </div>
@@ -65,7 +56,7 @@
         <button
             type="button"
             class="bottom-0 flex w-full flex-row justify-center p-4"
-            aria-label="scroll down"
+            aria-label={tl('btn-scroll-down')}
             onclick={() => aboutDiv.scrollIntoView()}
         >
             <i class="fi fi-rr-angle-down text-2xl"></i>
@@ -76,13 +67,10 @@
     <div bind:this={aboutDiv} id="about">
         <div class="dynamic-grid">
             <IntroAnimation intro="animate-fly-left" class="md:row-start-2">
-                <h2 class="heading text-right">WhoAmI</h2>
+                <h2 class="heading text-right">{tl('about')}</h2>
             </IntroAnimation>
             <IntroAnimation intro="animate-fade" class="md:row-start-1">
-                <p>
-                    I'm a software engineering student at the University of Waterloo. I'm passionate
-                    about everything software and tech, from FPGAs to web development and AI.
-                </p>
+                <p>{tl('about-1')}</p>
             </IntroAnimation>
 
             <IntroAnimation
@@ -92,21 +80,16 @@
                 <ThemedImg
                     lightSrc="/img/website-light.png"
                     darkSrc="/img/website-dark.png"
-                    alt="icon of a website"
+                    alt={tl('image-website')}
                 />
                 <ThemedImg
                     lightSrc="/img/ai-light.png"
                     darkSrc="/img/ai-dark.png"
-                    alt="icon of artificial intelligence"
+                    alt={tl('image-ai')}
                 />
             </IntroAnimation>
             <IntroAnimation intro="animate-fade">
-                <p>
-                    I first learned to code in 2014, starting with Python, then Java, then a whole
-                    bunch of other languages. I've also been running a home Linux server since 2018.
-                    My favourite languages are Rust and Python. During my free time, I like to
-                    develop web apps, mod video games, play the piano, and crochet.
-                </p>
+                <p>{tl('about-2')}</p>
             </IntroAnimation>
         </div>
     </div>
@@ -115,10 +98,10 @@
     <div id="projects">
         <div class="dynamic-grid-lg">
             <IntroAnimation intro="animate-fly-left lg:animate-fly-right" class="lg:col-start-2">
-                <h2 class="heading text-right lg:text-left">Projects</h2>
+                <h2 class="heading text-right lg:text-left">{tl('projects')}</h2>
             </IntroAnimation>
             <IntroAnimation intro="animate-fade" class="lg:col-start-2">
-                <p>I've made so many projects over the years. Here are some of my highlights!</p>
+                <p>{tl('projects-1')}</p>
             </IntroAnimation>
 
             <IntroAnimation intro="animate-fade" class="lg:row-span-3 lg:row-start-1">
@@ -131,7 +114,7 @@
     <div id="contact">
         <div class="dynamic-grid">
             <IntroAnimation intro="animate-fly-left">
-                <h2 class="heading text-right">Contact</h2>
+                <h2 class="heading text-right">{tl('contact')}</h2>
             </IntroAnimation>
 
             <IntroAnimation intro="animate-fade">
@@ -141,16 +124,20 @@
                     <a
                         href="https://www.linkedin.com/in/taijasmine/"
                         target="_blank"
-                        aria-label="LinkedIn"
+                        aria-label={tl('contact-linkedin')}
                     >
                         <i class="fi fi-brands-linkedin"></i>
                     </a>
 
-                    <a href="https://github.com/j-tai" target="_blank" aria-label="GitHub">
+                    <a
+                        href="https://github.com/j-tai"
+                        target="_blank"
+                        aria-label={tl('contact-github')}
+                    >
                         <i class="fi fi-brands-github"></i>
                     </a>
 
-                    <a href={emailAddress} aria-label="Email">
+                    <a href={emailAddress} aria-label={tl('contact-email')}>
                         <i class="fi fi-rr-envelope"></i>
                     </a>
                 </div>
