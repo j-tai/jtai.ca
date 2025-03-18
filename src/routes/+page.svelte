@@ -33,7 +33,7 @@
 
             <IntroAnimation intro="animate-fade">
                 <div class="flex flex-row items-end justify-start">
-                    <div class="hidden pl-32 pr-4 min-[480px]:block">
+                    <div class="hidden pr-4 pl-32 min-[480px]:block">
                         <img src="/img/arrow1.svg" alt={tl('image-arrow')} class="h-24" />
                     </div>
                     <div class="flex-1 min-[480px]:hidden"></div>

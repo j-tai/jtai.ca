@@ -2,7 +2,7 @@
     import { tl } from './i18n';
 </script>
 
-<footer class="flex flex-row flex-wrap justify-center bg-surface-200 lowercase">
+<footer class="bg-surface-200 flex flex-row flex-wrap justify-center lowercase">
     <a href="https://en.pronouns.page/@jtai" target="_blank">{tl('footer-pronouns')}</a>
     <a href="https://github.com/j-tai" target="_blank">{tl('footer-github')}</a>
     <a href="https://se-webring.xyz" target="_blank">{tl('footer-webring')}</a>
@@ -10,7 +10,9 @@
 </footer>
 
 <style lang="postcss">
+    @reference 'tailwindcss';
+
     footer a {
-        @apply px-3 py-2 transition-colors hover:bg-surface-300;
+        @apply hover:bg-surface-300 px-3 py-2 transition-colors;
     }
 </style>

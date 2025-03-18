@@ -1,25 +1,24 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton/optional/presets';
+@import '@skeletonlabs/skeleton/themes/legacy';
+@source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
+
 @import '@flaticon/flaticon-uicons/css/regular/rounded';
 @import '@flaticon/flaticon-uicons/css/brands/all';
 @import '@fontsource-variable/quicksand';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import './theme.css';
 
 body {
-    font-family: 'Quicksand Variable';
     overflow-x: hidden;
 }
 
 * {
     scroll-behavior: smooth;
-}
-
-.fi {
-    /* Icons are always block displayed */
-    display: block;
-    /* Icons have 0 line height to avoid weird extra space below them */
-    line-height: 0;
 }
 
 @layer components {
@@ -35,4 +34,11 @@ body {
     h2.heading {
         @apply xs:text-[5rem] text-7xl font-light sm:text-8xl;
     }
+}
+
+.fi {
+    /* Icons are always block displayed */
+    display: block;
+    /* Icons have 0 line height to avoid weird extra space below them */
+    line-height: 0;
 }

@@ -26,7 +26,7 @@
     <!-- Left button -->
     <button
         type="button"
-        class="variant-filled btn-icon max-xs:col-start-1 max-xs:row-start-2"
+        class="preset-filled btn-icon max-xs:col-start-1 max-xs:row-start-2"
         onclick={left}
         aria-label="previous"
     >
@@ -42,7 +42,7 @@
             <a
                 href={project.href}
                 target="_blank"
-                class="aspect-square flex-none basis-full snap-center text-surface-100 rounded-container-token"
+                class="aspect-square flex-none basis-full snap-center text-surface-100 rounded-container"
                 style="--light-bg: url(/img/project/{project.id}-light.png);
                        --dark-bg: url(/img/project/{project.id}-dark.png)"
             >
@@ -62,7 +62,7 @@
     <!-- Right button -->
     <button
         type="button"
-        class="variant-filled btn-icon max-xs:col-start-3 max-xs:row-start-2"
+        class="preset-filled btn-icon max-xs:col-start-3 max-xs:row-start-2"
         onclick={right}
         aria-label="next"
     >

@@ -1,0 +1,73 @@
+@theme {
+    --breakpoint-xs: 512px;
+
+    --animate-fly-above: fly-above 1s ease-out;
+    --animate-fly-below: fly-below 1s ease-out;
+    --animate-fly-left: fly-left 1s ease-out;
+    --animate-fly-right: fly-right 1s ease-out;
+    --animate-fade: fade 1s ease-in-out;
+
+    @keyframes fly-above {
+        0%,
+        15% {
+            translate: 0 -40svh;
+            opacity: 0;
+        }
+        to {
+            translate: 0 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes fly-below {
+        0%,
+        15% {
+            translate: 0 40svh;
+            opacity: 0;
+        }
+        to {
+            translate: 0 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes fly-left {
+        0%,
+        15% {
+            translate: -40svw 0;
+            opacity: 0;
+        }
+        to {
+            translate: 0 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes fly-right {
+        0%,
+        15% {
+            translate: 40svw 0;
+            opacity: 0;
+        }
+        to {
+            translate: 0 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade {
+        0%,
+        25% {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+[data-theme='legacy'] {
+    --heading-font-family: 'Quicksand Variable', sans-serif;
+    --base-font-family: 'Quicksand Variable', sans-serif;
+    --anchor-font-family: 'Quicksand Variable', sans-serif;
+}
