@@ -19,12 +19,7 @@
 
 <div class="flex flex-row items-center gap-3">
     <i class="fi fi-rr-globe flex-none text-lg" aria-label={tl('language')} id="lang-lbl"></i>
-    <select
-        class="select w-auto flex-none"
-        value={i18n.language}
-        {onchange}
-        aria-labelledby="lang-lbl"
-    >
+    <select class="select flex-none" value={i18n.language} {onchange} aria-labelledby="lang-lbl">
         {#each Object.entries(languages) as [lang, name] (lang)}
             <option value={lang}>{name}</option>
         {/each}

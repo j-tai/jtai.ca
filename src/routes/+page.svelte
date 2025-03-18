@@ -149,8 +149,12 @@
 <Footer />
 
 <style lang="postcss">
+    @reference 'tailwindcss';
+
     main > div {
-        @apply even:bg-surface-100;
+        &:nth-child(even) {
+            background: oklch(96.4% 0.01 279.78deg);
+        }
 
         > div {
             @apply container mx-auto gap-x-16 gap-y-16 px-4 py-[calc(max(4rem,_25svh))];

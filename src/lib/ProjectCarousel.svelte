@@ -15,7 +15,7 @@
 
     function right() {
         const x =
-            carousel.scrollLeft === carousel.scrollWidth - carousel.clientWidth
+            carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth * 1.5
                 ? 0 // loop
                 : carousel.scrollLeft + carousel.clientWidth; // step right
         carousel.scroll(x, 0);
@@ -36,13 +36,13 @@
     <!-- Entries -->
     <div
         bind:this={carousel}
-        class="flex snap-x snap-mandatory gap-4 overflow-x-auto max-xs:col-span-full max-xs:row-start-1"
+        class="max-xs:col-span-full max-xs:row-start-1 flex snap-x snap-mandatory gap-4 overflow-x-auto"
     >
         {#each PROJECTS as project (project.id)}
             <a
                 href={project.href}
                 target="_blank"
-                class="aspect-square flex-none basis-full snap-center text-surface-100 rounded-container"
+                class="text-surface-contrast-950 rounded-container aspect-square flex-none basis-full snap-center"
                 style="--light-bg: url(/img/project/{project.id}-light.png);
                        --dark-bg: url(/img/project/{project.id}-dark.png)"
             >
@@ -85,10 +85,10 @@
         > div {
             background: linear-gradient(
                 to bottom,
-                rgb(var(--color-surface-900) / 0.05) 0%,
-                rgb(var(--color-surface-900) / 0.3) 40%,
-                rgb(var(--color-surface-900) / 0.6) 60%,
-                rgb(var(--color-surface-900) / 0.95) 100%
+                oklch(from var(--color-surface-900) l c h / 0.05) 0%,
+                oklch(from var(--color-surface-900) l c h / 0.3) 40%,
+                oklch(from var(--color-surface-900) l c h / 0.6) 60%,
+                oklch(from var(--color-surface-900) l c h / 0.95) 100%
             );
         }
     }

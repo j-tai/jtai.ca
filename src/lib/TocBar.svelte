@@ -23,13 +23,15 @@
 
 <svelte:document onscroll={update} />
 
-<nav class="bg-surface-200 sticky top-0 z-50 overflow-x-auto">
+<nav class="bg-surface-50 sticky top-0 z-50 overflow-x-auto">
     <div class="mx-auto flex w-fit flex-row items-center justify-center px-4">
         {#each items as item (item)}
             <a
                 href="#{item}"
-                class="px-3 py-2 text-lg lowercase sm:px-4 sm:py-3 sm:text-2xl"
-                class:current={item === activeId}
+                class="hover:bg-surface-100 border-b-4 px-3 py-2 text-lg lowercase transition-colors sm:px-4 sm:py-3 sm:text-2xl"
+                class:border-transparent={item !== activeId}
+                class:border-primary-800={item === activeId}
+                class:bg-surface-100={item === activeId}
             >
                 {tl('toc-' + item)}
             </a>
@@ -39,17 +41,3 @@
         </div>
     </div>
 </nav>
-
-<style lang="postcss">
-    a {
-        @apply border-b-4 border-transparent transition-colors;
-
-        &:hover {
-            @apply bg-surface-300;
-        }
-
-        &.current {
-            @apply border-primary-800 bg-surface-300;
-        }
-    }
-</style>

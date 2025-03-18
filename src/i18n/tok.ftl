@@ -45,7 +45,7 @@ contact-email = Email
 ## Footer
 footer-pronouns = Pronouns.page
 footer-github = GitHub
-footer-webring = SE Webring
+footer-webring = sike pi kulupu SE
 footer-source = toki ilo
 
 

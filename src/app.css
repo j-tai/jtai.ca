@@ -34,6 +34,11 @@ body {
     h2.heading {
         @apply xs:text-[5rem] text-7xl font-light sm:text-8xl;
     }
+
+    select.select {
+        /* Skeleton already has this but it gets overriden */
+        @apply !w-auto !pr-10;
+    }
 }
 
 .fi {
