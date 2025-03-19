@@ -66,7 +66,9 @@
     }
 }
 
-[data-theme='legacy'] {
+@custom-variant dark (&:where(.dark, .dark *));
+
+[data-theme] {
     --heading-font-family: 'Quicksand Variable', sans-serif;
     --base-font-family: 'Quicksand Variable', sans-serif;
     --anchor-font-family: 'Quicksand Variable', sans-serif;
