@@ -1,4 +1,4 @@
-name = jan Jasamin Ta
+name = jan Jasamin Tai
 site = jtai.ca
 
 toc-home = open
@@ -7,9 +7,9 @@ toc-projects = pali
 toc-contact = toki
 
 ## Home
-slogan-1 = ilo nanpa
+slogan-1 = toki ilo
 slogan-2 = li
-slogan-3 = suwi
+slogan-3 = musi
 image-arrow = linja sike tawa poka
 image-face = sinpin pi jan Jasamin
 hello =
