@@ -44,6 +44,8 @@ contact-email = Email
 
 ## Footer
 footer-pronouns = Pronouns.page
+footer-pronouns-cc = Pronouns.cc
+    .href = https://pronouns.cc/@jtai/tok
 footer-github = GitHub
 footer-webring = sike pi kulupu SE
 footer-source = toki ilo

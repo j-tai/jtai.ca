@@ -44,6 +44,8 @@ contact-email = Email
 
 ## Footer
 footer-pronouns = Pronouns.page
+footer-pronouns-cc = Pronouns.cc
+    .href = https://pronouns.cc/@jtai
 footer-github = GitHub
 footer-webring = SE Webring
 footer-source = Source code
