@@ -12,17 +12,15 @@ slogan-2 = is
 slogan-3 = Art
 image-arrow = Loopy arrow pointing right
 image-face = Jasmine's face
-hello =
-    Hello! I'm Jasmine (she/her), and I'm a Software Engineering student at the
-    University of Waterloo!
+hello = Hello! I'm Jasmine (she/her), and I'm a software engineer!
 btn-scroll-down = Scroll down
 
 ## About
 about = WhoAmI
 about-1 =
-    I'm a software engineering student at the University of Waterloo. I'm
-    passionate about everything software and tech, from FPGAs to web development
-    and AI.
+    I have a bachelor's degree in software engineering from the University of
+    Waterloo. I'm passionate about everything software and tech, from FPGAs to
+    web development and AI.
 image-website = Icon of a website
 image-ai = Icon of artificial intelligence
 about-2 = 
