@@ -1,0 +1,9 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "jtai",
+    "compatibility_date": "2025-07-20",
+    "assets": {
+        "directory": "./.svelte-kit/cloudflare",
+        "not_found_handling": "404-page",
+    },
+}
