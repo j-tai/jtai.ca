@@ -1,3 +1,7 @@
+<!--
+    Copyright (c) 2025 Jasmine Tai. All rights reserved.
+-->
+
 <script lang="ts">
     import type { Snippet } from 'svelte';
     import { onintersect } from './intersect.svelte';

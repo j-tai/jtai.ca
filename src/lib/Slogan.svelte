@@ -1,3 +1,7 @@
+<!--
+    Copyright (c) 2025 Jasmine Tai. All rights reserved.
+-->
+
 <script lang="ts">
     import type { HTMLAttributes } from 'svelte/elements';
     import type { FlipParams } from 'svelte/animate';

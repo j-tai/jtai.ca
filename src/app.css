@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2025 Jasmine Tai. All rights reserved.
+ */
+
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';

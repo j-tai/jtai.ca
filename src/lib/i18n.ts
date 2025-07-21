@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2025 Jasmine Tai. All rights reserved.
+ */
+
 import { FluentI18n } from '@jtai/toolskit-i18n';
 import en from '/src/i18n/en.ftl?raw';
 

@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2025 Jasmine Tai. All rights reserved.
+ */
+
 import type { Action } from 'svelte/action';
 
 export const onintersect: Action<HTMLElement, (entry: IntersectionObserverEntry) => void> = (

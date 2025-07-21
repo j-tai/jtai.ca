@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2025 Jasmine Tai. All rights reserved.
+ */
+
 /**
  * Mapping from technologies to their colors.
  */

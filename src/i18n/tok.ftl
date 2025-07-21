@@ -1,3 +1,5 @@
+# Copyright (c) 2025 Jasmine Tai. All rights reserved.
+
 name = jan Jasamin Tai
 site = jtai.ca
 

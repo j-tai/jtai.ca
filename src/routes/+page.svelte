@@ -1,3 +1,7 @@
+<!--
+    Copyright (c) 2025 Jasmine Tai. All rights reserved.
+-->
+
 <script lang="ts">
     import Footer from '$lib/Footer.svelte';
     import { tl } from '$lib/i18n';

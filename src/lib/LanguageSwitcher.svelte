@@ -1,3 +1,7 @@
+<!--
+    Copyright (c) 2025 Jasmine Tai. All rights reserved.
+-->
+
 <script lang="ts">
     import type { I18n } from '@jtai/toolskit-i18n';
     import { i18n, tl } from './i18n';

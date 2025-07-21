@@ -1,3 +1,5 @@
+# Copyright (c) 2025 Jasmine Tai. All rights reserved.
+
 # Show this help message
 help:
     just --list

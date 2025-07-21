@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2025 Jasmine Tai. All rights reserved.
+ */
+
 export function mangle(text: string): string {
     let accumulator = 0x5f;
     return mapCodePoints(text, (n) => {

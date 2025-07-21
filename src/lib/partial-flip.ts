@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2025 Jasmine Tai. All rights reserved.
+ */
+
 import { flip, type AnimationConfig, type FlipParams } from 'svelte/animate';
 
 export interface PartialFlipParams extends FlipParams {
