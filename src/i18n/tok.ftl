@@ -50,6 +50,12 @@ footer-source = toki ilo
 
 
 ## Projects
+proj-crochetcraft = CrochetCraft
+proj-crochetcraft-info = o pali e nasin len tan linja
+proj-revoice = Revoice
+proj-revoice-info = o kute o pona e kalama uta sina
+proj-nbtwriter = NBTWriter
+proj-nbtwriter-info = o lukin o ante e lipu NBT
 proj-commaid = ComMaid
 proj-commaid-info = o pona e toki tawa jan pi kalama ala tawa jan kalama
 proj-songmaid = SongMaid

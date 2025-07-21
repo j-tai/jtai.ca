@@ -50,6 +50,7 @@ export const TECHNOLOGIES = {
     SvelteKit: '#ff3e00',
     'Tailwind CSS': '#38bdf8',
     tRPC: '#398ccb',
+    'Three.js': '#000000',
     TypeORM: '#ff0009',
     nginx: '#009639',
     npm: '#cb3837',
@@ -74,8 +75,57 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
     {
+        id: 'crochetcraft',
+        href: 'https://crochetcraft.jtai.dev',
+        date: [2024, 2025],
+        technologies: ['TypeScript', 'Three.js', 'SvelteKit'],
+        moreTechnologies: [
+            'Tailwind CSS',
+            'Cloudflare',
+            'Svelte',
+            'Node.js',
+            'PostCSS',
+            'CSS',
+            'HTML',
+            'JavaScript',
+        ],
+    },
+
+    {
+        id: 'revoice',
+        href: 'https://revoice.jtai.dev',
+        date: [2025, 2025],
+        technologies: ['TypeScript', 'SvelteKit', 'Cloudflare'],
+        moreTechnologies: [
+            'Tailwind CSS',
+            'Svelte',
+            'Node.js',
+            'PostCSS',
+            'CSS',
+            'HTML',
+            'JavaScript',
+        ],
+    },
+
+    {
+        id: 'nbtwriter',
+        href: 'https://nbtwriter.jtai.dev',
+        date: [2025, 2025],
+        technologies: ['TypeScript', 'SvelteKit', 'Tailwind CSS'],
+        moreTechnologies: [
+            'Cloudflare',
+            'Svelte',
+            'Node.js',
+            'PostCSS',
+            'CSS',
+            'HTML',
+            'JavaScript',
+        ],
+    },
+
+    {
         id: 'commaid',
-        href: 'https://commaid.jtai.ca',
+        href: 'https://commaid.jtai.dev',
         date: [2024, 2025],
         technologies: ['Rust', 'TypeScript', 'SvelteKit', 'Tailwind CSS'],
         moreTechnologies: [

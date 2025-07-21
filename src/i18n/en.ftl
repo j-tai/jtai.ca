@@ -50,6 +50,12 @@ footer-source = Source code
 
 
 ## Projects
+proj-crochetcraft = CrochetCraft
+proj-crochetcraft-info = CAD and 3D modelling of crochet patterns
+proj-revoice = Revoice
+proj-revoice-info = Audio recording and voice training app
+proj-nbtwriter = NBTWriter
+proj-nbtwriter-info = Editor for files in NBT format
 proj-commaid = ComMaid
 proj-commaid-info = Communication aid for Deaf and non-Deaf people
 proj-songmaid = SongMaid
